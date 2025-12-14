@@ -1,0 +1,12 @@
+{
+  "name": "NSFW Telegram Bot",
+  "description": "Telegram NSFW Detection Bot on Heroku",
+  "keywords": ["telegram", "bot", "nsfw", "python", "docker"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Telegram Bot Token",
+      "required": true
+    }
+  },
+  "stack": "container"
+}
