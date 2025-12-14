@@ -14,8 +14,10 @@ from telegram.helpers import escape_markdown
 
 # הגדרות בסיסיות
 DATABASE_PATH = "bot_settings.db"  # שם קובץ בסיס הנתונים
-TEMP_FOLDER = "temp"  # תיקייה לשמירת קבצים זמניים
-BOT_TOKEN = "YOUR TOKEN IS HERE"  # הטוקן של הבוט שלך
+TEMP_FOLDER = "temp"  # תיקייה לשמירת קבצים 
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
 detector = NudeDetector()  # אתחול המודל לזיהוי תוכן לא ראוי
 
 class ModBot:
